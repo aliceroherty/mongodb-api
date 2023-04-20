@@ -1,0 +1,29 @@
+GET http://localhost:3000/customers
+
+###
+
+GET http://localhost:3000/customers/643f4d6e41da563bef50f4ab
+
+###
+
+POST http://localhost:3000/customers
+Content-Type: application/json
+
+{
+    "name": "Cool Customer",
+    "isRepeatCustomer": "true"
+}
+
+###
+
+DELETE http://localhost:3000/customers/643f4d6e41da563bef50f4ab
+
+###
+
+PATCH  http://localhost:3000/customers/64407a688d68f33dd4d4ac1f
+Content-Type: application/json
+
+{
+    "name": "Best Customer",
+    "isRepeatCustomer": false
+}
